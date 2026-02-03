@@ -1,6 +1,6 @@
 const WhyMe = () => {
   return (
-    <section className="py-24 px-6 bg-zinc-950">
+    <section className="py-20 px-6 bg-zinc-900">
       <div className="max-w-6xl mx-auto text-center">
 
         <h2 className="text-4xl font-bold mb-8">
@@ -15,7 +15,7 @@ const WhyMe = () => {
 
         <div className="grid sm:grid-cols-2 gap-8 text-left">
 
-          <div className="bg-zinc-900 rounded-xl border border-zinc-800 p-6">
+          <div className="bg-zinc-950 rounded-xl border border-zinc-800 p-6">
             <h3 className="font-semibold mb-2">
               🎓 Software Engineering
             </h3>
@@ -26,7 +26,7 @@ const WhyMe = () => {
             </p>
           </div>
 
-          <div className="bg-zinc-900 rounded-xl border border-zinc-800 p-6">
+          <div className="bg-zinc-950 rounded-xl border border-zinc-800 p-6">
             <h3 className="font-semibold mb-2">
               🧠 Product mindset
             </h3>
@@ -37,7 +37,7 @@ const WhyMe = () => {
             </p>
           </div>
 
-          <div className="bg-zinc-900 rounded-xl border border-zinc-800 p-6">
+          <div className="bg-zinc-950 rounded-xl border border-zinc-800 p-6">
             <h3 className="font-semibold mb-2">
               ⚙️ Full-stack skills
             </h3>
@@ -48,7 +48,7 @@ const WhyMe = () => {
             </p>
           </div>
 
-          <div className="bg-zinc-900 rounded-xl border border-zinc-800 p-6">
+          <div className="bg-zinc-950 rounded-xl border border-zinc-800 p-6">
             <h3 className="font-semibold mb-2">
               🚀 Real projects
             </h3>

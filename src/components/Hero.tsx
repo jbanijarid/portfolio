@@ -15,11 +15,11 @@ const Hero = () => {
         </p>
 
         <div className="mt-10 flex gap-4">
-            <button className="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-500 transition" 
+            <button className="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 transition" 
             onClick={() => scrollToSection("projects")}>
                 View my Projects
             </button>
-            <button className="px-6 py-3 rounded-lg border border-zinc-500 hover:border-zinc-100 transition "
+            <button className="px-6 py-3 rounded-lg border border-zinc-500 hover:border-zinc-100 transition"
             onClick={() => scrollToSection("cta")}>
                 Contact me
             </button>

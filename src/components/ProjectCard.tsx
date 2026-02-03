@@ -6,7 +6,7 @@ interface ProjectProps {
     onClose: () => void;
 }
 
-const ProjectModal = ({ project, onClose }: ProjectProps) => {
+const ProjectCard = ({ project, onClose }: ProjectProps) => {
 
     if (!project) {
         return null;
@@ -40,7 +40,7 @@ const ProjectModal = ({ project, onClose }: ProjectProps) => {
                     <p className="text-gray-400 leading-relaxed">{project.details}</p>
 
                     <div className="mb-6">
-                        <h4 className="text-lg font-medium mb-2">Tâces principales : </h4>
+                        <h4 className="text-lg font-medium mb-2">Main Tasks : </h4>
                         <ul className="list-disc list-inside text-gray-300 space-y-1">
                             {project.tasks.map((task, index) => (
                                 <li key={index}>{task}</li>
@@ -49,8 +49,8 @@ const ProjectModal = ({ project, onClose }: ProjectProps) => {
                     </div>
 
                     <div className="mb-6">
-                        <h4 className="text-lg font-medium mb-2">Technologies utilisées : </h4>
-                        <div className="flex flex-wrap gap-2">
+                        <h4 className="text-lg font-medium mb-2">Stack : </h4>
+                        <div className="flex flex-wrap items-center justify-center gap-3 ">
                             {project.stack.map((tech, index) => (
                                 <span
                                     key={index}
@@ -64,7 +64,7 @@ const ProjectModal = ({ project, onClose }: ProjectProps) => {
 
                     <button className="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded"
                         onClick={onClose}>
-                        Fermer
+                        Close
                     </button>
                 </motion.div>
             </motion.div>
@@ -72,4 +72,4 @@ const ProjectModal = ({ project, onClose }: ProjectProps) => {
     );
 };
 
-export default ProjectModal;
+export default ProjectCard;
