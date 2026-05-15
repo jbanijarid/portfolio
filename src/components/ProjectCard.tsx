@@ -29,7 +29,7 @@ const ProjectCard = ({ project, onClose }: ProjectProps) => {
                 onClick={handleBackdropClick}
             >
                 <motion.div
-                    className="bg-gray-800 text-white p-6 md:p-8 rounded-lg max-w-2xl w-full shadow-2xl relative overflow-y-auto max-h-[90vh]"
+                    className="bg-zinc-900 text-white p-6 md:p-8 rounded-lg max-w-2xl w-full shadow-2xl relative overflow-y-auto max-h-[90vh]"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}
