@@ -1,31 +1,43 @@
 const Hero = () => {
+    return (
+        <section 
+            id="hero"
+            className="relative min-h-screen flex flex-col justify-center bg-[#0a0a0a] px-8 md:px-16 lg:px-24"
+        >
+            <div className="max-w-7xl w-full mx-auto realtive z-10 pt-24">
+                <p className="text-xs tracking-[0.4em] uppercase text-[#c9a84c] mb-10">
+                    Full-Stack Developer
+                </p>
 
-    const scrollToSection = (id:any) => {
-  const element = document.getElementById(id);
-  element?.scrollIntoView({ behavior: "smooth" });
-};
 
-  return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
-        <h1 className="text-5xl md:text-6xl font-bold max-w-4xl leading-tight">
-            I build full-stack web products from idea to production
-            </h1>
-        <p className="mt-6 text-lg text-zinc-400 max-w-2xl">
-            Java Spring Boot · React · PostgreSQL · Product-driven engineering
-        </p>
+                <h1 className="font-serif font-light text-5xl md:text-7xl lg:text-9xl text-[#e8e0d0] mb-24">
+                    <span className="block mb-6 md:mb-8">Jad</span>
+                    <span className="block gold-text pl-12 md:pl-24 mt-2">BANI JARID</span>
+                </h1>
 
-        <div className="mt-10 flex gap-4">
-            <button className="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 transition" 
-            onClick={() => scrollToSection("projects")}>
-                View my Projects
-            </button>
-            <button className="px-6 py-3 rounded-lg border border-zinc-500 hover:border-zinc-100 transition"
-            onClick={() => scrollToSection("cta")}>
-                Contact me
-            </button>
-        </div>
-    </section>
-  );
-};
+                <div className="flex justify-center md:justify-end">
+                    <p></p>
+                    <div className="flex items-center gap-8">
+                        <a 
+                            href="#contact"
+                            data-hover
+                            className="px-8 py-3 border border-[#c9a84c]/40 text-xs uppercase tracking-[0.25em] text-[#c9a84c] hover:bg-[#c9a84c] hover:text-[#0a0a0a] transition-all duration-300">
+                            Contact me
+                        </a>
+
+                        <a
+                            href="#experience"
+                            data-hover
+                            className="text-xs tracking-[0.25em] uppercase text-[#c9a84c]/40 hover:text-[#e8e0d0] transition-all duration-300 flex items-center gap-3">
+                            Learn More <span className="block w-6 h-px bg-current"/>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+    );
+}
 
 export default Hero;
