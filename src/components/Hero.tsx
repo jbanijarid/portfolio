@@ -26,7 +26,7 @@ const Hero = () => {
                         </a>
 
                         <a
-                            href="#experience"
+                            href="#projects"
                             data-hover
                             className="text-xs tracking-[0.25em] uppercase text-[#c9a84c]/40 hover:text-[#e8e0d0] transition-all duration-300 flex items-center gap-3">
                             Learn More <span className="block w-6 h-px bg-current"/>
