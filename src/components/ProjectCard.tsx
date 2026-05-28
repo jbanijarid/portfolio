@@ -29,32 +29,32 @@ const ProjectCard = ({ project, onClose }: ProjectProps) => {
                 onClick={handleBackdropClick}
             >
                 <motion.div
-                    className="bg-zinc-900 text-white p-6 md:p-8 rounded-lg max-w-2xl w-full shadow-2xl relative overflow-y-auto max-h-[90vh]"
+                    className="bg-[#0a0a0a] p-6 md:p-8 rounded-lg max-w-2xl w-full shadow-2xl relative overflow-y-auto max-h-[90vh]"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}
                     transition={{ duration: 0.4 }}
                 >
-                    <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
-                    <p className="text-gray-300 mb-4 italic">{project.description}</p>
-                    <p className="text-gray-400 leading-relaxed">{project.details}</p>
+                    <h3 className="text-2xl text-[#c9a84c] font-serif mb-3">{project.title}</h3>
+                    <p className="text-[#e8e0d0] mb-4 font-serif">{project.description}</p>
+                    <p className="text-[#717060] font-serif mb-4">{project.details}</p>
 
                     <div className="mb-6">
-                        <h4 className="text-lg font-medium mb-2">Main Tasks : </h4>
-                        <ul className="list-disc list-inside text-gray-300 space-y-1">
+                        <h4 className="text-lg text-[#e8e0d0] font-serif mb-2">Main Tasks : </h4>
+                        <ul className="list-disc list-inside text-[#717060] font-serif">
                             {project.tasks.map((task, index) => (
                                 <li key={index}>{task}</li>
                             ))}
                         </ul>
                     </div>
 
-                    <div className="mb-6">
-                        <h4 className="text-lg font-medium mb-2">Stack : </h4>
+                    <div className="mb-4">
+                        <h4 className="text-lg text-[#e8e0d0] font-serif mb-2">Stack : </h4>
                         <div className="flex flex-wrap items-center justify-center gap-3 ">
                             {project.stack.map((tech, index) => (
                                 <span
                                     key={index}
-                                    className="bg-indigo-600 bg-opacity-20 text-indigo-400 border border-indigo-500 px-3 py-1 rounded-full text-sm"
+                                    className="text-[10px] px-2 py-0.5 font-serif bg-[#161616] border border-[#2a2520] text-[#7a7060]"
                                 >
                                     {tech}
                                 </span>
@@ -62,7 +62,7 @@ const ProjectCard = ({ project, onClose }: ProjectProps) => {
                         </div>
                     </div>
 
-                    <button className="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded"
+                    <button className="px-8 py-3 border border-[#c9a84c]/40 text-xs font-serif uppercase tracking-[0.25em] text-[#c9a84c] hover:bg-[#c9a84c] hover:text-[#0a0a0a] transition-all duration-300"
                         onClick={onClose}>
                         Close
                     </button>

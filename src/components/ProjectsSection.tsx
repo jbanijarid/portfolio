@@ -52,6 +52,34 @@ const projects : ProjectType[] = [
     stack: ["Perl", "Python"],
     link: "#",
   },
+  {
+    title: "AI-TravelPlanner | Full-Stack Developer",
+    description:
+      "Adding a new feature to the AMC open-source project",
+    details:
+      "Designed and developed a full-stack AI-driven travel planner that generates personalized itineraries based on user preferences and constraints. ",
+    tasks: [
+      "AI & Backend: Integrated Mistral AI using Spring AI to generate structured data.",
+      "Frontend: Built a modern interface with React and TypeScript.",
+      "Project under active development"
+    ],
+    stack: ["Java", "React", "Mistral AI"],
+    link: "#",
+  },
+  {
+    title: "Developer Portfolio Website",
+    description:
+      "Personal portfolio website to showcase projects and skills",
+    details:
+      "Designed and developed a personal portfolio website to showcase my projects, skills, and experience as a developer. The website features a clean and modern design, responsive layout, and interactive elements to engage visitors.",
+    tasks: [
+      "Designed and implemented the website using React and TailwindCSS",
+      "Created reusable components",
+      "Deployed the website on Vercel for global access"
+    ],
+    stack: ["React", "TailwindCSS", "Vercel"],
+    link: "#",
+  },
 ];
 
 
@@ -72,22 +100,22 @@ const ProjectsSection = () => {
 
           {projects.map((project, index) => (
             <div className=" group bg-[#0d0d0d] rounded rounded-xl border border-[#1e1a16] hover:border-[#c9a84c]/20 p-8 relative card-glow transition-all duration-500">
-              <span className="font-serif text-[#c9a84c]/20 text-4xl block mb-4">{index + 1}</span>
+              <span className="font-serif text-[#c9a84c]/20 text-4xl block mb-6">{index + 1}</span>
               <h3 className="font-serif text-xl text-[#e8e0d0] mb-2">
                 {project.title}
               </h3>
 
-              <p className="text-[#717060] mb-4">
+              <p className="text-[#717060] font-serif mb-4">
                 {project.description}
               </p>
 
               <p className="flex flex-wrap gap-2 mb-6">
                 {project.stack.map((tech, i) => (
-                  <span key={i} className="text-[10px] px-2 py-0.5 bg-[#161616] border border-[#2a2520] text-[#7a7060]"> {tech} </span>
+                  <span key={i} className="text-[10px] font-serif px-2 py-0.5 bg-[#161616] border border-[#2a2520] text-[#7a7060]"> {tech} </span>
                 ))}
               </p>
 
-              <button className="px-8 py-3 border border-[#c9a84c]/40 text-xs uppercase tracking-[0.25em] text-[#c9a84c] hover:bg-[#c9a84c] hover:text-[#0a0a0a] transition-all duration-300"
+              <button className="px-8 py-3 border border-[#c9a84c]/40 text-xs font-serif uppercase tracking-[0.25em] text-[#c9a84c] hover:bg-[#c9a84c] hover:text-[#0a0a0a] transition-all duration-300"
                 onClick={() => setSelectedProject(project)}>
                 details
               </button>
