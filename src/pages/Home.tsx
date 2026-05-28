@@ -1,16 +1,19 @@
 import Hero from "../components/Hero";
-import WhatIDo from "../components/WhatIDo";
-import WhyMe from "../components/WhyMe";
 import ProjectsSection from "../components/ProjectsSection";
 import Contact from "../components/ContactMe";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Skills from "../components/Skills";
+
 const Home = () => {
     return (
-        <div className="bg-zinc-950 text-white">
+        <div className=" text-white">
+            <Navbar/>
             <Hero/>
-            <WhatIDo/>
             <ProjectsSection/>
-            <WhyMe/>
+            <Skills/>
             <Contact/>
+            <Footer/>
         </div>
     )
 }

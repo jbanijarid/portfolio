@@ -19,7 +19,8 @@ const skills: Skill[] = [
 
 const Skills: FC = () => {
   return (
-    <section className="bg-[#0a0a0a] py-20 px-6" id="skills">
+    <section className="bg-[#0a0a0a] py-20 px-6" 
+            id="skills">
       <div className="max-w-5xl mx-auto">
 
         <h2 className="font-serif font-light  text-5xl md:text-6xl text-[#e8e0d0] mb-4">
