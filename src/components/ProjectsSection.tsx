@@ -87,7 +87,8 @@ const ProjectsSection = () => {
 
   const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
   return ( 
-    <section className="bg-[#0a0a0a] py-32 px-8 md:px-16 lg:px-24 relative overflow-hidden">
+    <section className="bg-[#0a0a0a] py-32 px-8 md:px-16 lg:px-24 relative overflow-hidden"
+      id="projects">
       <div className="max-w-6xl mx-auto">
 
 

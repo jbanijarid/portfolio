@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <section 
-            id="hero"
+            id="about"
             className="relative min-h-screen flex flex-col justify-center bg-[#0a0a0a] px-8 md:px-16 lg:px-24"
         >
             <div className="max-w-7xl w-full mx-auto realtive z-10 pt-24">
