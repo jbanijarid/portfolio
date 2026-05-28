@@ -7,12 +7,19 @@ const projects : ProjectType[] = [
     title: "Digital Version of The Race Board Game",
     description: "Digital transformation of the board game *The Race*",
     details:
-      "This project consists of building a digital version of the board game *The Race*, allowing users to play online with an interactive interface.",
+      "This project consists of building a digital version of the board game \"The Race\","
+       + " allowing users to play online with an interactive interface."
+       + " \"The Race\" is a multiplayer car racing game where movements are determined by dice rolls,"
+       + " and player interactions are managed through the use of cards.",
     tasks: [
-      "Designing the user interface",
-      "Developing the core game features",
+      "Full-stack development using Java Spring, TypeScript, React, and TailwindCSS",
+      "Designed and implemented REST APIs",
+      "Integrated JWT authentication for secure API access",
+      "Managed PostgreSQL (relational) and MongoDB (NoSQL) databases",
+      "Deployed the application on AlwaysData servers",
+      "Worked in an Agile environment with two-week sprints"
     ],
-    stack: ["React", "Node.js", "Socket.io"],
+    stack: ["Java Spring", "React", "MongoDB", "PostgreSQL", "SCRUM", "Docker"],
     link: "#",
   },
   {
@@ -25,7 +32,7 @@ const projects : ProjectType[] = [
       "Building customizable dashboards",
       "Implementing real-time collaboration features",
     ],
-    stack: ["React", "Node.js", "Socket.io"],
+    stack: ["React", "Node.js", "MongoDB", "Docker"],
     link: "#",
   },
   {
@@ -33,12 +40,16 @@ const projects : ProjectType[] = [
     description:
       "Adding a new feature to the AMC open-source project",
     details:
-      "This project involved contributing to the AMC open-source project by designing and implementing a new feature requested by the community.",
+      "Added a new feature to the open-source AMC (Auto Multiple Choice) software to automate the process of"
+      + "matching exam papers with students.",
     tasks: [
-      "Analyzing community requirements",
-      "Developing and testing the new feature",
+      "Defined and analyzed client requirements and translated them into user stories",
+      " Performed image processing using Python and Google VisionAI API to extract handwritten",
+      " student numbers",
+      " Modified AMC’s Perl-based UI to integrate and execute the OCR script",
+      " Worked under Agile methodology using JIRA"
     ],
-    stack: ["React", "Node.js", "Socket.io"],
+    stack: ["Perl", "Python"],
     link: "#",
   },
 ];
@@ -48,30 +59,35 @@ const ProjectsSection = () => {
 
   const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
   return ( 
-    <section className="bg-zinc-950 py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="bg-[#0a0a0a] py-32 px-8 md:px-16 lg:px-24 relative overflow-hidden">
+      <div className="max-w-6xl mx-auto">
 
-        <h2 className="text-4xl font-bold mb-10">Featured Projects</h2>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8">
+        <h2 className="font-serif font-light  text-5xl md:text-6xl text-[#e8e0d0] mb-4">
+          Projects & <br /> 
+          <span className="italic">Features</span>
+        </h2>
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
 
           {projects.map((project, index) => (
-            <div className="bg-zinc-900 rounded rounded-xl border border-zinc-800 p-6">
-              <h3 className="font-semibold mb-2">
+            <div className=" group bg-[#0d0d0d] rounded rounded-xl border border-[#1e1a16] hover:border-[#c9a84c]/20 p-8 relative card-glow transition-all duration-500">
+              <span className="font-serif text-[#c9a84c]/20 text-4xl block mb-4">{index + 1}</span>
+              <h3 className="font-serif text-xl text-[#e8e0d0] mb-2">
                 {project.title}
               </h3>
 
-              <p className="text-zinc-400 mb-3">
+              <p className="text-[#717060] mb-4">
                 {project.description}
               </p>
 
-              <p className="text-zinc-500 mb-3">
+              <p className="flex flex-wrap gap-2 mb-6">
                 {project.stack.map((tech, i) => (
-                  <span key={i}> {tech} </span>
+                  <span key={i} className="text-[10px] px-2 py-0.5 bg-[#161616] border border-[#2a2520] text-[#7a7060]"> {tech} </span>
                 ))}
               </p>
 
-              <button className="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 transition"
+              <button className="px-8 py-3 border border-[#c9a84c]/40 text-xs uppercase tracking-[0.25em] text-[#c9a84c] hover:bg-[#c9a84c] hover:text-[#0a0a0a] transition-all duration-300"
                 onClick={() => setSelectedProject(project)}>
                 details
               </button>
@@ -84,7 +100,6 @@ const ProjectsSection = () => {
           />
         </div>
       
-
       </div>
     </section>
   )
