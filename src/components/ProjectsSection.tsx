@@ -4,6 +4,34 @@ import { Project as ProjectType } from "./type";
 
 const projects : ProjectType[] = [
   {
+    title: "AI-TravelPlanner | Full-Stack Developer",
+    description:
+      "Adding a new feature to the AMC open-source project",
+    details:
+      "Designed and developed a full-stack AI-driven travel planner that generates personalized itineraries based on user preferences and constraints. ",
+    tasks: [
+      "AI & Backend: Integrated Mistral AI using Spring AI to generate structured data.",
+      "Frontend: Built a modern interface with React and TypeScript.",
+      "Project under active development"
+    ],
+    stack: ["Java", "React", "Mistral AI"],
+    link: "#",
+  },
+  {
+    title: "Developer Portfolio Website",
+    description:
+      "Personal portfolio website to showcase projects and skills",
+    details:
+      "Designed and developed a personal portfolio website to showcase my projects, skills, and experience as a developer. The website features a clean and modern design, responsive layout, and interactive elements to engage visitors.",
+    tasks: [
+      "Designed and implemented the website using React and TailwindCSS",
+      "Created reusable components",
+      "Deployed the website on Vercel for global access"
+    ],
+    stack: ["React", "TailwindCSS", "Vercel"],
+    link: "#",
+  },
+  {
     title: "Digital Version of The Race Board Game",
     description: "Digital transformation of the board game *The Race*",
     details:
@@ -50,34 +78,6 @@ const projects : ProjectType[] = [
       " Worked under Agile methodology using JIRA"
     ],
     stack: ["Perl", "Python"],
-    link: "#",
-  },
-  {
-    title: "AI-TravelPlanner | Full-Stack Developer",
-    description:
-      "Adding a new feature to the AMC open-source project",
-    details:
-      "Designed and developed a full-stack AI-driven travel planner that generates personalized itineraries based on user preferences and constraints. ",
-    tasks: [
-      "AI & Backend: Integrated Mistral AI using Spring AI to generate structured data.",
-      "Frontend: Built a modern interface with React and TypeScript.",
-      "Project under active development"
-    ],
-    stack: ["Java", "React", "Mistral AI"],
-    link: "#",
-  },
-  {
-    title: "Developer Portfolio Website",
-    description:
-      "Personal portfolio website to showcase projects and skills",
-    details:
-      "Designed and developed a personal portfolio website to showcase my projects, skills, and experience as a developer. The website features a clean and modern design, responsive layout, and interactive elements to engage visitors.",
-    tasks: [
-      "Designed and implemented the website using React and TailwindCSS",
-      "Created reusable components",
-      "Deployed the website on Vercel for global access"
-    ],
-    stack: ["React", "TailwindCSS", "Vercel"],
     link: "#",
   },
 ];
